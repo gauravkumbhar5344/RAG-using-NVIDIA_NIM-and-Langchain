@@ -1,0 +1,12 @@
+import streamlit as st
+import os
+from langchain_nvidia_ai_endpoints import NVIDIAEmbeddings, ChatNVIDIA
+from langchain_community.document_loaders import PyPDFDirectoryLoader
+from langchain.text_splitter import RecursiveCharecterTextSplitter
+from langchain.chains.combine_documents import create_stuffs_documents_chain
+from langchain_core.output_parsers import StrOutputParser
+from langchain.chains import create_retrieval_chain
+from langchain_community.vectorestores import FAISS
+
+from dotenv import load_dotenv
+load_dotenv()
