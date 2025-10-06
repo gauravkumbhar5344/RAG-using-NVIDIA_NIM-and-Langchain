@@ -24,8 +24,8 @@ This Streamlit application enables question answering over a collection of PDF d
    ```
 2. **Create and activate a virtual environment (recommended):**
   ```bash
-      python -m venv venv
-      source venv/bin/activate
+   python -m venv venv
+   source venv/bin/activate
   ```
 3. **Install dependencies:**
    ```bash
@@ -41,9 +41,9 @@ This Streamlit application enables question answering over a collection of PDF d
   Place your PDFs inside the ./RAG_DOCS directory. The app will load and process these files.
 
 2. Run the Streamlit app:
-  ```bash
-  streamlit run app.py
-  ```
+   ```bash
+   streamlit run app.py
+   ```
 3. Using the app:
      - Click Document embedding to load the PDFs, split them into chunks, and create vector embeddings.
      - Enter a question related to the documents in the text input box.
