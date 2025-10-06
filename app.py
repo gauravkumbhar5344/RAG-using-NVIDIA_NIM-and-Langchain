@@ -17,6 +17,7 @@ os.environ['NVIDIA_API_KEY']=os.getenv('NVIDIA_API_KEY')
 
 llm=ChatNVIDIA(model="meta/llama3-8b-instruct")
 
+#function is created for performing embedding on the pdfs present under RAG_DOCS folder
 def vector_embedding():
     if "vectors" not in st.session_state:
         st.session_state.embeddings=NVIDIAEmbeddings()
